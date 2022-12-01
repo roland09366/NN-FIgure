@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>NN Figure</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section class="header">
+        <a href="Home page.html"><img src="logo.png" class="shop_logo" alt="shop logo" ></a>
+        <div>
+            <ul id="navigation_bar">
+                <li><a href="Home page.html">Home</a></li>
+                <li><a href="Products page.html">Products</a></li>
+                <li><a href="About page.html">About</a></li>
+                <li><a href="Contact page.html">Contact</a></li>
+                <li><a href="Login Page.html">Sign</a></li>
+                <li><a href="Cart page.html" class="active"><img src="cart.png" class="cart_logo"></a></li>
+                <p id="close" onclick="closing()">&#9747</p>
+            </ul>
+        </div>
+
+        <div id="small_device">
+            <img src="category.png" height="25cm" alt="category icon" id="bar" onclick="display()">
+
+        </div>
+    </section>
+
+    <section id="cart_layout" class="section">
+        <table width="100%" class="table">
+            <thead>
+                <tr>
+                   <td>Remove</td>
+                   <td>Image</td>
+                   <td>Product</td>
+                   <td>Quantity</td>
+                   <td>Price</td>
+                </tr>
+            </thead>
+            <tbody class="tablerow">
+                <tr>
+                    <td><input type="checkbox" class="remove"></td>
+                    <td><img src="top3.jpg" alt=""></td>
+                    <td>BANPRESTO ONE PIECE DXF 大和正版手办模型</td>
+                    <td><input type="number" value="1" min="1"  class="quantity"></td>
+                    <td class="price">Rm91.80</td>
+                </tr>
+            </tbody>
+
+            <tbody  class="tablerow">
+                <tr>
+                    <td><input type="checkbox" class="remove"></td>
+                    <td><img src="top6.jpg" alt=""></td>
+                    <td>Glitter&Glamours G&G Nico Robin Figure罗宾正版模型</td>
+                    <td><input type="number" value="1" min="1"  class="quantity"></td>
+                    <td class="price">Rm70.40</td>
+                </tr>
+            </tbody>
+
+            <tbody  class="tablerow">
+                <tr>
+                    <td><input type="checkbox" class="remove"></td>
+                    <td><img src="top33.jpg" alt=""></td>
+                    <td>Banpresto DXF One Piece Law Wano Figure和之国</td>
+                    <td ><input type="number" value="1" min="1"  class="quantity"> </td>
+                    <td class="price">Rm135.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart_layout2" class="section">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="calculator">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart subtotal</td>
+                    <td>RM 297.20</td>
+                </tr>
+                <tr>
+                    <td>Shipping fee</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Coupon discount</td>
+                    <td>RM 0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total">Rm297.20</td>
+                </tr>
+            </table>
+
+            <a href="checkout page.html"><button>Proceed to checkout</button></a>
+        </div>
+    </section>
+
+    <section id="news_layout" class="section margin" >
+        <div class="news_text">
+            <h3>Sign Up For The Latest Information</h3>
+            <p>Get E-mail updates about our balance payment and <span>special offers.</span></p>
+        </div>
+
+        <div class="news_form">
+            <input type="text" placeholder="Email address">
+            <button class="normal">Sign Up</button>
+        </div>
+
+    </section>
+
+    <footer class="section">
+        <div class="f_layout">
+            <img src="logo.png" alt="nn figure logo"  class="footer_shop_logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Jalan Sultanah Aminah, Taman Iskandar, 80050 Johor Bahru, Johor</p>
+            <p><strong>Phone:</strong> +60 16-888 8888</p>
+            <p><strong>Working Hours:</strong> 10:00 - 20:00</p>
+            <div class="follow">
+                <h4>Follow us:</h4>
+                <a href="https://www.facebook.com/nnfigureshop/"><img src="Facebook.png" alt="facebook icon" ></a>
+                <a href="https://www.youtube.com/channel/UC5wF5FivgLxCmatzRtoiLrw"><img src="youtube.png" alt="youtube icon"></a>
+                <a href="https://shopee.com.my/nnfigure"><img src="shopee.png" alt="shopee icon"></a>
+                <a href=""><img src="instagram.png" alt="instagram icon"></a>
+            </div>
+        </div>
+
+        <div class="f_layout">
+            <h4>About</h4>
+            <a href="About page.html">About us</a>
+            <a href="about1-removebg.png">Terms & Conditions</a>
+            <a href="Contact page.html">Contact us</a>
+        </div>
+
+        <div class="f_layout">
+            <h4>My Account</h4>
+            <a href="Login Page.html">Sign In</a>
+            <a href="Sign Up page.html">Sign Up</a>
+            <a href="Cart page.html">View Cart</a>
+            <a href="checkout page.html">Checkout</a>
+        </div>
+
+        <div class="f_layout">
+            <h4>Secured Payment Method</h4>
+            <img src="payment-removebg-preview.png" alt="payment method icon" class="footer_payment_logo">
+            <br>
+            <br>
+            <h4>Logistic Partner</h4>
+            <div class="logistic_layout">
+
+                <img src="JT-Express-Logo.png" alt="Jt express icon"  class="footer_logistic_logo">
+                <img src="Ninja-Van-Logo.png" alt="Ninja van icon"  class="footer_logistic_logo">
+                <img src="poslaju-logo-vector.png" alt="Pos laju icon"  class="footer_logistic_logo">
+                
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ 2020, NN Figure Sdn Bhd. Project by ROL Web Design</p>
+            
+        </div>
+    </footer>
+    
+    <script >
+
+        var removeCart = document.getElementsByClassName("remove");
+        for (var i=0; i < removeCart.length;i++){
+            var button = removeCart[i];
+            button.addEventListener("click",function(event){
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.parentElement.remove();
+   
+  })
+}
+
+    </script>
+    <script src="test.js"></script>
+
+</body>
+    
+</html>
